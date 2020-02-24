@@ -12,7 +12,7 @@ import com.trnka.restapi.dto.SyncDto;
 public interface StudentSyncEndpoint {
 
     @RequestMapping(method = RequestMethod.GET)
-    StudentDTO getTest(@QueryParam("studentId") String studentId);
+    StudentDTO getStudent(@QueryParam("studentId") String studentId);
 
     @RequestMapping(method = RequestMethod.GET, path = "syncAll")
     SyncDto syncAll();

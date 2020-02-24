@@ -3,6 +3,8 @@ package com.trnka.restapi.dto;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 public class ExaminationDto extends BaseDto {
@@ -12,5 +14,6 @@ public class ExaminationDto extends BaseDto {
     private Long complexity;
     private ExaminationType type;
     private Integer allowedRetries;
+    private List<ExaminationStepDto> steps;
 
 }

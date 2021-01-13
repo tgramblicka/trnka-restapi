@@ -4,6 +4,7 @@ import javax.ws.rs.QueryParam;
 
 import com.trnka.restapi.dto.statistics.DeviceStatisticsSyncDto;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -21,7 +22,7 @@ public interface SyncEndpoint {
     SyncDto syncAll();
 
     @RequestMapping(method = RequestMethod.POST, path = "examination-statistics")
-    Void updateExaminationStatisticsToAllStudents(DeviceStatisticsSyncDto dto);
+    Boolean updateExaminationStatisticsToAllStudents(@RequestBody DeviceStatisticsSyncDto dto);
 
 
 

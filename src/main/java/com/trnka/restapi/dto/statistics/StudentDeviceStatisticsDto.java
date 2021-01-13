@@ -6,7 +6,7 @@ import java.util.List;
 
 @Data
 public class StudentDeviceStatisticsDto {
-    private Long studentCode;
+    private String studentCode;
     private Integer loginCount;
     private List<ExaminationStatisticDto> statistics;
 }

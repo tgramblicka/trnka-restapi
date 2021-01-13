@@ -12,7 +12,7 @@ public class ExaminationDto extends BaseDto {
     private String audio;
     private Long timeout;
     private Long complexity;
-    private ExaminationType type;
+    private SequenceType type;
     private Integer allowedRetries;
     private List<ExaminationStepDto> steps;
 

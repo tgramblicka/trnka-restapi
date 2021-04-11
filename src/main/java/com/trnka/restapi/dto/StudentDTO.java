@@ -1,6 +1,6 @@
 package com.trnka.restapi.dto;
 
-import java.util.List;
+import java.util.Set;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,5 +12,5 @@ import lombok.NoArgsConstructor;
 public class StudentDTO extends BaseDto {
     private String userName;
     private String code;
-    private List<ExaminationDto> examinations;
+    private Set<Long> examinationIds;
 }

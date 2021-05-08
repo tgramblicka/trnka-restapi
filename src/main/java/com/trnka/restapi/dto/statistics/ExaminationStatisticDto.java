@@ -1,6 +1,7 @@
 package com.trnka.restapi.dto.statistics;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -25,5 +26,5 @@ public class ExaminationStatisticDto {
     private String letterSequence;
     private Long totalTimeInMs;
     private Boolean passed;
-    private List<ExaminationStepStatisticDto> stepStatistics;
+    private List<ExaminationStepStatisticDto> stepStatistics = new ArrayList<>();
 }

@@ -3,6 +3,7 @@ package com.trnka.restapi.dto;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Data
@@ -15,5 +16,6 @@ public class ExaminationDto extends BaseDto {
     private SequenceType type;
     private Integer allowedRetries;
     private List<ExaminationStepDto> steps;
+    private BigDecimal passingRate;
 
 }

@@ -7,5 +7,6 @@ import java.util.List;
 
 @Data
 public class DeviceStatisticsSyncDto {
-    List<StudentDeviceStatisticsDto> statistics = new ArrayList<>();
+    private String deviceId;
+    private List<StudentDeviceStatisticsDto> statistics = new ArrayList<>();
 }

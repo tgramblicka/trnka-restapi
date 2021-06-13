@@ -20,7 +20,7 @@ public interface SyncEndpoint {
     StudentDTO getStudent(@QueryParam("studentId") String studentId);
 
     @RequestMapping(method = RequestMethod.GET, path = "all")
-    SyncDto getSyncDto();
+    SyncDto getSyncDto(@QueryParam("deviceId") String deviceId);
 
     @RequestMapping(method = RequestMethod.POST, path = "examination-statistics")
     Boolean updateExaminationStatisticsToAllStudents(@RequestBody DeviceStatisticsSyncDto dto);
